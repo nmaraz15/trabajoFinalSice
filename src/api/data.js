@@ -10,7 +10,7 @@ export const data = [
       require('../../assets/images/bajadaDiablos2.webp'),
       require('../../assets/images/bajadaDiablos3.webp')
     ],
-    date: 'Enero 2023',
+   date: 'Enero 2023',
     locationCoordinates: {
       latitude: -23.30610153805632,
       longitude: -65.35946008582322
@@ -28,7 +28,7 @@ export const data = [
       require('../../assets/images/carnaval3.webp'),
       require('../../assets/images/carnaval4.webp')
     ],
-    date: 'Febrero 2023',
+     date: 'Febrero 2023',
     locationCoordinates: {
       latitude: -24.183163215378347,
       longitude: -65.3312979025704
@@ -46,7 +46,7 @@ export const data = [
       require('../../assets/images/puntaCorral3.webp'),
       require('../../assets/images/puntaCorral4.webp')
     ],
-   date: 'Abril 2023',
+    date: 'Abril 2023',
     locationCoordinates: {
       latitude: -23.7222,
       longitude: -65.5
@@ -82,13 +82,12 @@ export const data = [
       require('../../assets/images/estudiantes2.webp'),
       require('../../assets/images/estudiantes3.webp')
     ],
-    date: 'Septiembre 2023',
+   date: 'Septiembre 2023',
     locationCoordinates: {
       latitude: -24.183163215378347,
       longitude: -65.3312979025704
     }
   }
-  
-  
+   
   
 ]

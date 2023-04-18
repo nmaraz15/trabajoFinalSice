@@ -50,5 +50,42 @@ export const styles = StyleSheet.create({
     height: 250,
     marginVertical: 20,
     borderRadius: 10
+  }, 
+  
+
+  assistantsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingLeft: 5
+
+  },
+  imageAssistants1: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    },
+  imageAssistants2: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -15
+  },
+  imageAssistants3: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -30
+  },
+  imageAssistants4: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -45
+  },
+  imageAssistants5: {
+    width: 40, 
+    height: 40, 
+    borderRadius: 40/ 2,
+    left: -60
   }
 })

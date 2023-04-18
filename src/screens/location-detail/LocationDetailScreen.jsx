@@ -16,6 +16,8 @@ export const LocationDetailScreen = ({ route }) => {
           ))}
         </ScrollView>
       </View>
+   
+
 
       <View style={styles.textContainer}>
         <Text style={styles.title}>{item.title}</Text>
@@ -24,9 +26,27 @@ export const LocationDetailScreen = ({ route }) => {
         <View style={styles.ratingContainer}>
           <Ionicons name='star' size={20} color={COLORS.primary} />
           <Text style={styles.rating}>{item.rating}</Text>
-        </View>
+          
+          <View style={styles.assistantsContainer}>
+          
+          <Image source={require('../../../assets/images/assistent1.jpg')} style={styles.imageAssistants1}/>
+          <Image source={require('../../../assets/images/assistent2.jpg')} style={styles.imageAssistants2}/>
+          <Image source={require('../../../assets/images/assistent3.jpg')} style={styles.imageAssistants3}/>
+          <Image source={require('../../../assets/images/assistent4.jpg')} style={styles.imageAssistants4}/>
+          <Image source={require('../../../assets/images/total.jpg')} style={styles.imageAssistants5}/>
+          </View>
+      
+       </View>
+
+
         <Text style={styles.description}>{item.description}</Text>
       </View>
+    
+    
+     
+
+
+
       <MapView
         style={styles.map}
         initialRegion={{
