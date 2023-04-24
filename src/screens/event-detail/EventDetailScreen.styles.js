@@ -1,5 +1,6 @@
 import { StyleSheet, StatusBar, Dimensions } from 'react-native'
 import { COLORS, FONT_SIZE } from '../../utils/theme'
+import { BottomTabBar } from '@react-navigation/bottom-tabs'
 
 export const styles = StyleSheet.create({
   container: {
@@ -22,16 +23,26 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10
   },
-  location: {
+  event: {
     fontSize: 18,
     color: '#666',
     marginBottom: 5
   },
   date: {
-    fontSize: 20,
-    color: '#444',
-    marginBottom: 5
-  },
+    marginTop: 250, 
+    marginLeft:0,
+     height: 50,
+     width: '55%',
+      borderColor: COLORS.inactive,
+      borderWidth: 1,
+      borderRadius: 8,
+      fontSize: FONT_SIZE.md,
+       color: COLORS.white,
+      backgroundColor: COLORS.secondaty,
+      paddingLeft:2,
+      paddingTop: 14,
+      textAlign: 'center'
+ },
   ratingContainer: {
     flexDirection: 'row',
     alignItems: 'center'
@@ -87,5 +98,31 @@ export const styles = StyleSheet.create({
     height: 40, 
     borderRadius: 40/ 2,
     left: -60
+  },
+  webButton: {
+    textAlign: 'center',
+    backgroundColor: COLORS.secondaty,
+    color: COLORS.white,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    width: 100,
+    height: 40,
+    marginTop: 10
+  },
+  button: {
+    textAlign: 'center',
+    backgroundColor: COLORS.grey,
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingLeft: 17,
+    width: 150,
+    height: 40,
+    marginTop: 5,
+    left: -50
+  },
+  buttonText: {
+    color: COLORS.secondaty,
+    fontSize:13
   }
 })

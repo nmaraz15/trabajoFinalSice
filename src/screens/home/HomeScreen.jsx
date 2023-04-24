@@ -6,11 +6,11 @@ export const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground style={styles.bgImage} source={require('../../../assets/images/main.webp')}>
-       
-      </ImageBackground>
       <Text style={styles.title}>
          Jujuy Argentina
         </Text>
+      </ImageBackground>
+      
     </SafeAreaView>
   )
 }
