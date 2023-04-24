@@ -35,10 +35,10 @@ export const styles = StyleSheet.create({
      width: '55%',
       borderColor: COLORS.inactive,
       borderWidth: 1,
-      borderRadius: 8,
+      borderRadius: 3,
       fontSize: FONT_SIZE.md,
        color: COLORS.white,
-      backgroundColor: COLORS.secondaty,
+      backgroundColor: COLORS.secondary,
       paddingLeft:2,
       paddingTop: 14,
       textAlign: 'center'
@@ -101,28 +101,28 @@ export const styles = StyleSheet.create({
   },
   webButton: {
     textAlign: 'center',
-    backgroundColor: COLORS.secondaty,
+    backgroundColor: COLORS.primary,
     color: COLORS.white,
     borderRadius: 5,
     paddingHorizontal: 10,
     paddingVertical: 8,
-    width: 100,
-    height: 40,
+    width: 150,
+    height: 35,
     marginTop: 10
   },
   button: {
     textAlign: 'center',
     backgroundColor: COLORS.grey,
     borderRadius: 5,
-    paddingVertical: 10,
+    paddingVertical: 8,
     paddingLeft: 17,
-    width: 150,
-    height: 40,
-    marginTop: 5,
+    width: 145,
+    height: 35,
+    marginTop: 7,
     left: -50
   },
   buttonText: {
-    color: COLORS.secondaty,
+    color: COLORS.secondary,
     fontSize:13
   }
 })
