@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState  } from 'react'
 import { View, ScrollView, Image, Text, ImageBackground, TouchableOpacity } from 'react-native'
 import MapView, { Marker } from 'react-native-maps'
 import { styles } from './EventDetailScreen.styles'
@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../../utils/theme'
 import { Link } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
-
+import { AnimatedSwitch } from './AnimatedSwitch'
 
 export const EventDetailScreen = ({ route }) => {
   const { item } = route.params
@@ -18,10 +18,18 @@ export const EventDetailScreen = ({ route }) => {
       <View style={styles.imageContainer}>
         <ScrollView horizontal pagingEnabled style={styles.imageContainer}>
           {item.images.map((image, idx) => (
-            <ImageBackground key={idx} source={image} style={styles.image} resizeMode='cover'>
+            <ImageBackground key={idx} source={{ uri: `https://drive.google.com/uc?id=${image}` }} 
+            style={styles.image} 
+            resizeMode='cover'>
 
           <Text style={styles.date}>{item.date}</Text>
          </ImageBackground>
+
+
+
+
+
+
 
 
           ))}
@@ -51,10 +59,19 @@ export const EventDetailScreen = ({ route }) => {
           <Image source={require('../../../assets/images/assistent4.jpg')} style={styles.imageAssistants4}/>
           <Image source={require('../../../assets/images/total.jpg')} style={styles.imageAssistants5}/>
           
-        <TouchableOpacity style={styles.button}>
+       
         <Text style={styles.buttonText}>¡Unete a la diversión!!</Text>
-         </TouchableOpacity>
+        <View style={styles.button}>
+        <AnimatedSwitch ></AnimatedSwitch>
+        </View>
           
+
+
+        
+         
+      
+
+
           
           </View>
        )}

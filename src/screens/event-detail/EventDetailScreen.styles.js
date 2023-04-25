@@ -112,17 +112,17 @@ export const styles = StyleSheet.create({
   },
   button: {
     textAlign: 'center',
-    backgroundColor: COLORS.grey,
-    borderRadius: 5,
-    paddingVertical: 8,
+        paddingVertical: 8,
     paddingLeft: 17,
     width: 145,
     height: 35,
     marginTop: 7,
-    left: -50
+    left: -180
   },
   buttonText: {
     color: COLORS.secondary,
-    fontSize:13
+    fontSize:13,
+    paddingBottom: 50,
+    left: -50
   }
 })
